@@ -13,7 +13,7 @@ parallel (
                     bat "echo Stage 2 finished %DATE% %TIME%"
             }
         }
-}
+)}
 
 parallel (
     "Thread 1": {
@@ -24,4 +24,4 @@ parallel (
                     bat "echo Stage 3 finished %DATE% %TIME%"
             }
         }
-}
+)}
