@@ -12,15 +12,15 @@ parallel (
                     bat "ping -n 5 127.0.0.1 > nul"
                     bat "echo Stage 2 finished %DATE% %TIME%"
             }
-        },
-
+        }
+    },
     "Thread 2": {
-
-            node {
-                stage("Stage 3") {
-                        bat "echo Stage 3 timeout commencing..."
-                        bat "ping -n 5 127.0.0.1 > nul"
-                        bat "echo Stage 3 finished %DATE% %TIME%"
-                }
+        node {
+            stage("Stage 3") {
+                    bat "echo Stage 3 timeout commencing..."
+                    bat "ping -n 5 127.0.0.1 > nul"
+                    bat "echo Stage 3 finished %DATE% %TIME%"
             }
+        }
+    }
 }
